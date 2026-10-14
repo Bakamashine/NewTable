@@ -190,7 +190,7 @@ for index, n in enumerate(newNtcTable):
             temperature=n.temperature, acp=n.acp
     ) + '\n'
 
-end = "}"
+end = "};"
 final_str += end
 print(final_str)
 with open("table_result.txt", "w") as f:
