@@ -180,7 +180,7 @@ for index in range(len(ntcTable) - 1):
 print("=======END======")
 
 final_str = ""
-start_method = "static const NtcPoint ntcTable[] PROGMEM = {"
+start_method = "static const NtcPoint ntcTable[] PROGMEM = {\n/* temperature|acp */\n"
 final_str += start_method
 for index, n in enumerate(newNtcTable):
     fmt_str = "{$temperature, $acp}"
